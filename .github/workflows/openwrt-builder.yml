@@ -32,12 +32,7 @@ jobs:
   build:
     runs-on: ubuntu-22.04
 
-    steps:
-    - name: Fix Swapfile Permissions
-      run: |
-        sudo touch /swapfile || true
-        sudo chmod 777 /swapfile || true
-
+    steps:    
     - name: Checkout
       uses: actions/checkout@main
 
